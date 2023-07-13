@@ -1,1 +1,125 @@
 /* Write your CSS here */
+.app-container {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+    display: grid;
+    place-items: center;
+    font-family: Roboto;
+}
+
+.appoinments-card {
+    background-color: #fff;
+    padding: 25px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    width: 90%;
+}
+
+.form-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 60%;
+    max-width: 450px;
+    flex-grow: 0.6;
+
+}
+@media screen and (max-width: 767px) {
+    .image {
+        display: none;
+    }
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 32px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #b5b7c4;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.title-input {
+    color:  #171f46;
+    margin-bottom: 5px;
+    padding: 12px 18px;
+    border: 1px solid  #b5b7c4;
+    border-radius: 4px;
+    font-size: 14px;
+    max-width: 350px;
+}
+
+.date-input {
+    color:  #171f46;
+    padding: 12px 18px;
+    border: 1px solid  #b5b7c4;
+    border-radius: 4px;
+    font-size: 14px;
+    max-width: 350px;
+    margin-bottom: 25px;
+}
+
+.form input:focus {
+    outline: 2px solid #9897f0;
+}
+
+.add-btn {
+    border: none;
+    background-color: #8b5cf6;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.separator {
+    border: 1px solid #b5b7c4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.sub-heading-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointments-heading {
+    font-size: 24px;
+    color: #171f46;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.starred-btn {
+    background-color: #fff;
+    border: 2px solid #9897f0;
+    padding: 8px 24px;
+    border-radius: 25px;
+    color: #9897f0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.appoinments-list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
